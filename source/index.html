@@ -7,7 +7,7 @@
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="74" height="23" alt="лого приложения «Пинк»">
+      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="74" height="23" alt="Лого приложения «Пинк»">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -42,47 +42,35 @@
       <h1 class="visually-hidden">Приложение «Пинк» — фотоприложение номер один</h1>
       <img class="intro__back-img" src="https://via.placeholder.com/150x150" width="320" height="462" alt="картинка-фон">
       <div class="intro__wrapper">
-        <h2 class="visually-hidden">скачайте наше фотоприложение</h2>
+        <h2 class="visually-hidden">Скачайте наше фотоприложение</h2>
         <p class="intro__slogan">Взгляните на жизнь<br>иначе!</p>
-        <button class="intro__download-app" type="submit">Скачать приложение</button>
-        <a class="intro__apple-logo" href="#">
-          <svg width="47" height="56" viewBox="" xmlns="">
-            <path d=""/>
-          </svg>
-        </a>
-        <a class="intro__android-logo" href="#">
-          <svg width="43" height="47" viewBox="" xmlns="">
-            <path d=""/>
-          </svg>
-        </a>
-        <a class="intro__microsoft-logo" href="#">
-          <svg width="44" height="41" viewBox="" xmlns="">
-            <path d=""/>
-          </svg>
-        </a>
+        <a class="intro__download-app" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+        <a class="intro__apple-logo" href="https://www.apple.com/ru/ios/app-store/"><span class="visually-hidden">App-store</span></a>
+        <a class="intro__android-logo" href="https://play.google.com/store"><span class="visually-hidden">GooglePlay</span></a>
+        <a class="intro__microsoft-logo" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone"><span class="visually-hidden">WindowsStore</span></a>
         <p class="intro__avialability">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
       </div>
     </section>
-    <section class="information">
-      <h2 class="visually-hidden">что мы предлагаем</h2>
-      <div class="information__wrapper">
-        <p class="information__intro">Устали от серости мегаполиса?</p>
-        <p class="information__intro">Нам есть, что вам предложить!</p>
-        <ul class="information__advantages-list">
-          <li class="information__advantages-item information__advantages-item--mood">
-            <h3 class="information__title">Поднимает настроение</h3>
-            <p class="information__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+    <section class="advantages">
+      <h2 class="visually-hidden">Что мы предлагаем</h2>
+      <div class="advantages__wrapper">
+        <p class="advantages__intro">Устали от серости мегаполиса?</p>
+        <p class="advantages__intro">Нам есть, что вам предложить!</p>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--mood">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
-          <li class="information__advantages-item information__advantages-item--world">
-            <h3 class="information__title">Меняет мир вокруг</h3>
-            <p class="information__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <li class="advantages__item advantages__item--world">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
-          <li class="information__advantages-item information__advantages-item--friends">
-            <h3 class="information__title">Заводит новых друзей</h3>
-            <p class="information__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <li class="advantages-item advantages-item--friends">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <div class="information__on-phone">
+        <div class="advantages__on-phone">
           <img src="https://via.placeholder.com/150x150" width="157" height="320" alt="картинка-со-смайликом">
         </div>
       </div>
@@ -90,7 +78,7 @@
 
     <section class="reviews">
       <div class="reviews__wrapper slider">
-        <h2 class="visually-hidden">мнение пользователей</h2>
+        <h2 class="visually-hidden">Мнение пользователей</h2>
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item slider__item">
             <div class="reviews__author-info">
@@ -126,25 +114,27 @@
     <div class="page-footer__wrapper">
       <div class="page-footer__contacts contacts">
         <b class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</b>
-        <p class="contacts__var">Звоните:<a href="tel:+78125556666">+7 (812) 555-66-66</a></p>
-        <p class="contacts__var">Пишите:<a href="#">mail@htmlacademy.ru</a></p>
-        <p class="contacts__var">Приезжайте в гости:<a href="#">ул. Большая Конюшенная, 19/8</a></p>
+        <address class="contacts__var">
+          Звоните:<a href="tel:+78125556666">+7 (812) 555-66-66</a><br>
+          Пишите:<a href="#">mail@htmlacademy.ru</a><br>
+          Приезжайте в гости:<a href="#">ул. Большая Конюшенная, 19/8</a><br>
+        </address>
       </div>
       <div class="page-footer__logo">
         <a>
-          <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="145" height="40" alt="расширенное лого приложения «Пинк»">
+          <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="145" height="40" alt="расширенное лого приложения «Пинк»">
         </a>
       </div>
-      <div class="page-footer__social">
+      <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">twitter</a>
+            <a class="social__link social__link--twitter" href="#">Twitter</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">facebook</a>
+            <a class="social__link social__link--facebook" href="#">Facebook</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">youtube</a>
+            <a class="social__link social__link--youtube" href="#">Youtube</a>
           </li>
         </ul>
       </div>
