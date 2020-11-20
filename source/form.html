@@ -44,6 +44,7 @@
     </section>
     <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
       <fieldset class="form__fieldset">
+        <legend class="visually hidden">fullName</legend>
         <p class="form__filed-wrapper">
           <label class="form__label" for="surname">Фамилия:</label>
           <input class="form__input" id="surname" type="text" name="surname" value="Укажите фамилию *">
@@ -58,33 +59,34 @@
         </p>
       </fieldset>
       <fieldset class="form__achievements">
-        <legend class="fieldset-legend">Ваши безбашенные<br>достижения в путешествии</legend>
+        <legend class="form__legend">Ваши безбашенные<br>достижения в путешествии</legend>
         <p class="checkbox">
-          <input class="cheсkbox-input" type="checkbox" name="shark" id="shark" checked>
-          <label class="cheсkbox-label" for="shark">Сделал селфи с акулой</label>
+          <input class="cheсkbox__input visually-hidden" type="checkbox" name="shark" id="shark" checked>
+          <label class="cheсkbox__label" for="shark">Сделал селфи с акулой</label>
         </p>
         <p class="checkbox">
-          <input class="cheсkbox-input" type="checkbox" name="sunburn" id="sunburn" checked>
-          <label class="cheсkbox-label" for="sunburn">Обгорел на пляже</label>
+          <input class="cheсkbox__input visually-hidden" type="checkbox" name="sunburn" id="sunburn" checked>
+          <label class="cheсkbox__label" for="sunburn">Обгорел на пляже</label>
         </p>
         <p class="checkbox">
-          <input class="cheсkbox-input" type="checkbox" name="noris" id="noris" >
-          <label class="cheсkbox-label" for="noris">Видел Чака Норриса</label>
+          <input class="cheсkbox__input visually-hidden" type="checkbox" name="noris" id="noris" >
+          <label class="cheсkbox__label" for="noris">Видел Чака Норриса</label>
         </p>
         <p class="checkbox">
-          <input class="cheсkbox-input" type="checkbox" name="souvenirs" id="souvenirs" >
-          <label class="cheсkbox-label" for="souvenirs">Накупил сувениров</label>
+          <input class="cheсkbox__input visually-hidden" type="checkbox" name="souvenirs" id="souvenirs" >
+          <label class="cheсkbox__label" for="souvenirs">Накупил сувениров</label>
         </p>
         <p class="checkbox">
-          <input class="cheсkbox-input" type="checkbox" name="tower" id="tower" checked>
-          <label class="cheсkbox-label" for="tower">Удержал башню</label>
+          <input class="cheсkbox__input visually-hidden" type="checkbox" name="tower" id="tower" checked>
+          <label class="cheсkbox__label" for="tower">Удержал башню</label>
         </p>
         <p class="checkbox">
-          <input class="cheсkbox-input" type="checkbox" name="destroy" id="destroy">
-          <label class="cheсkbox-label" for="destroy">Разгромил отель</label>
+          <input class="cheсkbox__input visually-hidden" type="checkbox" name="destroy" id="destroy">
+          <label class="cheсkbox__label" for="destroy">Разгромил отель</label>
         </p>
       </fieldset>
       <fieldset class="form__contacts contacts">
+        <legend class="visually hidden">contacts</legend>
         <p class="contacts__item">
           <label for="tel">Номер телефона</label>
           <input id="tel" type="text" name="tel" value="Номер, пожалуйста">
@@ -97,12 +99,12 @@
       <fieldset class="radio">
         <legend class="radio__legend">С каким приложением<br>путешествовали?</legend>
         <p>
-          <input class="radio__app" name="app" type="radio" value="iOS" id="iOS">
+          <input class="radio__input visually-hidden" name="app" type="radio" value="iOS" id="iOS">
           <label class="radio__label" for="iOS" >Pink для iOS</label>
         </p>
         <p>
-          <input class="radio__app" name="app" type="radio" value="id="Android"" id="Android">
-          <label class="radio__label" for="Android">Pink на Android</label>
+          <input class="radio__app" name="app" type="radio"  value="android" id="android">
+          <label class="radio__label" for="android">Pink на Android</label>
         </p>
         <p>
           <input class="radio__app" name="app" type="radio" value="Windows" id="WindowsPhone" checked>
@@ -110,21 +112,24 @@
         </p>
       </fieldset>
       <fieldset class="form__emotions">
-        <p><b>Опишите свои эмоции</b></p>
-        <p><textarea name="comment" id="comment-field" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea></p>
+        <legend>Опишите свои эмоции</legend>
+        <label class="visually hidden">emotions</label>
+        <textarea name="comment" id="comment-field" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
       </fieldset>
       <p><button class="button" type="submit">Отправить форму</button></p>
     </form>
     <p>* — обязательные поля</p>
-    <div class="form__wrong">
-      <p><b>Что-то пошло не так!</b></p>
-      <p>Проверьте поля, выделенные красным,<br>скорее всего вы забыли их заполнить</p>
-      <button type="button" name="ok">Ok</button>
-    </div>
-    <div class="form__ok">
-      <p><b>Ваша заявка отправлена</b></p>
-      <p>Спасибо за ваше участие, ваша заявка<br>уже поступила к нам. В ближайшее<br>время мы рассмотрим ее и<br>оповестим вас.</p>
-      <button type="button" name="close">Закрыть окно</button>
+    <div class="modal">
+      <div class="modal modal--ok">
+        <p><b>Что-то пошло не так!</b></p>
+        <p>Проверьте поля, выделенные красным,<br>скорее всего вы забыли их заполнить</p>
+        <button type="button" name="ok">Ok</button>
+      </div>
+      <div class="modal modal--wrong">
+        <p><b>Ваша заявка отправлена</b></p>
+        <p>Спасибо за ваше участие, ваша заявка<br>уже поступила к нам. В ближайшее<br>время мы рассмотрим ее и<br>оповестим вас.</p>
+        <button type="button" name="close">Закрыть окно</button>
+      </div>
     </div>
   </main>
   <footer class="page-footer">
