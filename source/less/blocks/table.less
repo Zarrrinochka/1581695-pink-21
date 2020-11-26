@@ -1,8 +1,47 @@
+.table__tab {
+  border-collapse: collapse;
+}
 
-.table__head {
-  border: 2px solid #E5E5E5;
-  background-color: #283645;
-  border-left: 2px  #F2F2F2;
-  border-right: 2px #F2F2F2;
-  color: #FFFFFF
+.table__lines,
+.table__yes,
+.table__no {
+  border: 2px solid @gray;
+}
+
+.table__col {
+  color: @dark-blue;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  background: @white;
+}
+
+.table__up--td,
+.table__price--td {
+  font-family: inherit;
+  font-style: normal;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: @white;
+  background-color: @dark-blue;
+  border-bottom: none;
+  border-top: none;
+  border-right: 2px solid @gray;
+}
+
+.table__up :nth-child(3n+1),
+.table__price :nth-child(3n+1) {
+  border-right: none;
+}
+
+.table__up--td {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.table__price--td {
+  font-weight: 300;
+  font-size: 18px;
 }

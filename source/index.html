@@ -77,7 +77,6 @@
         <img src="https://via.placeholder.com/150x150" width="157" height="320" alt="картинка-со-смайликом">
       </div>
     </section>
-
     <section class="reviews">
       <div class="reviews__wrapper slider">
         <h2 class="visually-hidden">Мнение пользователей</h2>
@@ -110,35 +109,38 @@
         </p>
       </div>
     </section>
-    <section class="table">
+    <div class="table">
       <table class="table__tab">
         <caption class="visually-hidden">тарифы</caption>
-        <tr class="table__head">
-          <th>База</th>
-          <th>Стандарт
-            <div class="table__hit">Хит</div>
-          </th>
-          <th>Анлим</th>
+        <tr class="table__up">
+          <th class="visually-hidden">Тариф</th>
+          <td class="table__up--td">База</td>
+          <td class="table__up--td">Стандарт <!--<div class="table__hit">Хит</div>--></td>
+          <td class="table__up--td">Анлим</td>
         </tr>
-        <tr class="table__head">
-          <td>1,99 USD</td>
-          <td>3,99 USD</td>
-          <td>9,99 USD</td>
-        </tr>
-        <tr class="table__lines">
-          <td>Розовый фильтр</td>
-          <td>Розовый фильтр</td>
-          <td>Розовый фильтр</td>
+        <tr class="table__price">
+          <th class="visually-hidden">Цена</th>
+          <td class="table__price--td">1,99 USD</td>
+          <td class="table__price--td">3,99 USD</td>
+          <td class="table__price--td">9,99 USD</td>
         </tr>
         <tr class="table__lines">
-          <td>Смайлики</td>
-          <td>Смайлики</td>
-          <td>Смайлики</td>
+          <th class="table__col">Розовый фильтр</th>
+          <td class="table__yes"><div class="visually-hidden">Да</div></td>
+          <td class="table__yes"><div class="visually-hidden">Да</div></td>
+          <td class="table__yes"><div class="visually-hidden">Да</div></td>
         </tr>
         <tr class="table__lines">
-          <td>Комментарии</td>
-          <td>Комментарии</td>
-          <td>Комментарии</td>
+          <th class="table__col">Смайлики</th>
+          <td class="table__no"><div class="visually-hidden">Нет</div></td>
+          <td class="table__yes"><div class="visually-hidden">Да</div></td>
+          <td class="table__yes"><div class="visually-hidden">Да</div></td>
+        </tr>
+        <tr class="table__lines">
+          <th class="table__col">Комментарии</th>
+          <td class="table__no"><div class="visually-hidden">Нет</div></td>
+          <td class="table__no"><div class="visually-hidden">Нет</div></td>
+          <td class="table__yes"><div class="visually-hidden">Да</div></td>
         </tr>
       </table>
       <p class="reviews__toggles slider__toggles">
@@ -146,7 +148,7 @@
         <button class="slider__toggle" type="button">2</button>
         <button class="slider__toggle" type="button">3</button>
       </p>
-    </section>
+    </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
