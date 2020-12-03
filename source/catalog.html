@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="page-header">
@@ -39,157 +40,160 @@
   </header>
   <main class="page-main">
     <section>
-      <h1>Фотографии<br>пользователей</h1>
-      <p>Взгляните на фотографии, которые<br> выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+      <h1 class="page-main__intro">Фотографии<br>пользователей</h1>
+      <p class="page-main__text">Взгляните на фотографии, которые<br> выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
     </section>
     <div>
       <article class="user">
         <h2 class="visually-hidden">Пост пользователя</h2>
-        <div class="user__wrapper">
-          <span class="user__imgList">Панорама дня</span>
-          <a><img class="user__img" alt="zaglushka" src="https://via.placeholder.com/320x137"></a>
-          <span class="user__name">Анна</span>
-          <span class="user__publication-time"><time class=" " datetime="2020-11-21T12:13:00" title="20 ноября 2020 г.">(5 минут назад)</time></span>
-          <div class="user__text">
-            Прыгать или нет? Напишите в<br>комментарии свой совет и<br>смотрите прямую трансляцию в<br>перископе, задавайте свои вопросы!
+        <div>
+          <span class="user__panorame">Панорама дня</span>
+          <a><img class="user__img" alt="zaglushka" src="../img/panorama-tablet.jpg"></a>
+          <div class="user__wrapper">
+            <span class="user__name">Анна</span>
+            <span class="user__publication-time"><time class=" " datetime="2020-11-21T12:13:00" title="20 ноября 2020 г.">(5 минут назад)</time></span>
+            <div class="user__text">
+              Прыгать или нет? Напишите в<br>комментарии свой совет и<br>смотрите прямую трансляцию в<br>перископе, задавайте свои вопросы!
+            </div>
+            <button class="user__button-like" type="button"><span class="visually-hidden">лайкнуть</span></button>
+            <div class="user__button-text">Нравится:</div>
+            <div class="user__button-text">215</div>
           </div>
-          <button class="user__button-like" type="button"><span class="visually-hidden">лайкнуть</span></button>
-          <div class="user__button-text">Нравится:</div>
-          <div class="user__button-likes">215</div>
         </div>
       </article>
       <article class="user">
         <h3 class="visually-hidden">Пост пользователя</h3>
-        <div class="user__wrapper">
-          <a><img class="user__img" alt="zaglushka" src="https://via.placeholder.com/320x137"></a>
-          <span class="user__name">Левон</span>
-          <span class="user__publication-time"><time class=" " datetime="2020-11-21T12:13:00" title="20 ноября 2020 г.">(5 часов назад)</time></span>
-          <div class="user__text">
-            Вчера он на луну летал, сегодня в<br> руки к нам попал.
+        <div>
+          <a><img class="user__img" alt="zaglushka" src="../img/photo-1-mobile.jpg"></a>
+          <div class="user__wrapper">
+            <span class="user__name">Левон</span>
+            <span class="user__publication-time"><time class=" " datetime="2020-11-21T12:13:00" title="20 ноября 2020 г.">(5 часов назад)</time></span>
+            <div class="user__text">Вчера он на луну летал, сегодня в<br> руки к нам попал.</div>
+            <button class="user__button-like" type="button"><span class="visually-hidden">лайкнуть</span></button>
+            <div class="user__button-text">Нравится:</div>
+            <div class="user__button-text">356</div>
           </div>
-          <button class="user__button-like" type="button"><span class="visually-hidden">лайкнуть</span></button>
-          <div class="user__button-text">Нравится:</div>
-          <div class="user__button-likes">356</div>
         </div>
       </article>
       <article class="user">
         <h3 class="visually-hidden">Пост пользователя</h3>
-        <div class="user__wrapper">
-          <a><img class="user__img" alt="zaglushka" src="https://via.placeholder.com/320x137"></a>
-          <span class="user__name">Антон</span>
-          <span class="user__publication-time"><time class=" " datetime="2020-11-21T12:13:00" title="20 ноября 2020 г.">(12 часов назад)</time></span>
-          <div class="user__text">
-            Соседи будут рады!
+        <div>
+          <a><img class="user__img" alt="zaglushka" src="../img/photo-2-mobile.jpg"></a>
+          <div class="user__wrapper">
+            <span class="user__name">Антон</span>
+            <span class="user__publication-time"><time class=" " datetime="2020-11-21T12:13:00" title="20 ноября 2020 г.">(12 часов назад)</time></span>
+            <div class="user__text">
+              Соседи будут рады!
+            </div>
+            <button class="user__button-like" type="button"><span class="visually-hidden">лайкнуть</span></button>
+            <div class="user__button-text">Нравится:</div>
+            <div class="user__button-text">666</div>
           </div>
-          <button class="user__button-like" type="button"><span class="visually-hidden">лайкнуть</span></button>
-          <div class="user__button-text">Нравится:</div>
-          <div class="user__button-likes">666</div>
         </div>
       </article>
       <article class="user">
         <h3 class="visually-hidden">Пост пользователя</h3>
+        <a><img class="user__img" alt="zaglushka" src="../img/photo-3-tablet.jpg"></a>
         <div class="user__wrapper">
-          <a><img class="user__img" alt="zaglushka" src="https://via.placeholder.com/320x137"></a>
           <span class="user__name">Борис</span>
           <span class="user__publication-time"><time class=" " datetime="2020-11-21T12:13:00" title="20 ноября 2020 г.">(20 часов назад)</time></span>
-          <div class="user__text">
-            Здесь могла быть ваша цитата о<br> высоком и вечном.
-          </div>
+          <div class="user__text">Здесь могла быть ваша цитата о<br> высоком и вечном.</div>
           <button class="user__button-like" type="button"><span class="visually-hidden">лайкнуть</span></button>
           <div class="user__button-text">Нравится:</div>
-          <div class="user__button-likes">215</div>
+          <div class="user__button-text">215</div>
         </div>
-      </article>
-      <article class="user">
-        <h3 class="visually-hidden">Пост пользователя</h3>
+      </div>
+    </article>
+    <article class="user">
+      <h3 class="visually-hidden">Пост пользователя</h3>
+      <div>
+        <a><img class="user__img" alt="zaglushka" src="../img/photo-4-tablet.jpg"></a>
         <div class="user__wrapper">
-          <a><img class="user__img" alt="zaglushka" src="https://via.placeholder.com/320x137"></a>
-          <span class="user__name">Сергей</span>
-          <span class="user__publication-time"><time class=" " datetime="2020-11-21T12:13:00" title="20 ноября 2020 г.">(25 часов назад)</time></span>
-          <div class="user__text">
-            Самая кубанская в мире!
-          </div>
-          <button class="user__button-like" type="button"><span class="visually-hidden">лайкнуть</span></button>
-          <div class="user__button-text">Нравится:</div>
-          <div class="user__button-likes">4</div>
-        </div>
-      </article>
-      <article class="user">
-        <h3 class="visually-hidden">Пост пользователя</h3>
-        <div class="user__wrapper">
-          <a><img class="user__img" alt="zaglushka" src="https://via.placeholder.com/320x137"></a>
-          <span class="user__name">Максим</span>
-          <span class="user__publication-time"><time class=" " datetime="2020-11-21T12:13:00" title="20 ноября 2020 г.">(40 часов назад)</time></span>
-          <div class="user__text">
-            Где снег-то?
-          </div>
-          <button class="user__button-like" type="button"><span class="visually-hidden">лайкнуть</span></button>
-          <div class="user__button-text">Нравится:</div>
-          <div class="user__button-likes">150</div>
-        </div>
-      </article>
-      <article class="user">
-        <h3 class="visually-hidden">Пост пользователя</h3>
-        <div class="user__wrapper">
-          <a><img class="user__img" alt="zaglushka" src="https://via.placeholder.com/320x137"></a>
-          <span class="user__name">Надежда</span>
-          <span class="user__publication-time"><time class=" " datetime="2020-11-21T12:13:00" title="20 ноября 2020 г.">(45 часов назад)</time></span>
-          <div class="user__text">
-            Всем GM и взаимные лайки!
-          </div>
-          <button class="user__button-like" type="button"><span class="visually-hidden">лайкнуть</span></button>
-          <div class="user__button-text">Нравится:</div>
-          <div class="user__button-likes">2560</div>
-        </div>
-      </article>
-    </div>
-    <form class="post" action="https://echo.htmlacademy.ru/courses" method="post">
-      <span class="post__callFor">Затмите их всех!<br>Выкладывайте все, что накопилось в<br> телефоне!</span>
-      <img class="post__img" alt="zaglushka" src="https://via.placeholder.com/280x374">
-      <button class="post__button" type="button" name="button"><span class="visually-hidden">обрезать</span></button>
-      <div class="post__range-controls">
-        <input type="range" id="crop" name="crop" min="0" max="10">
-        <label for="crop" >Crop</label>
-      </div>
-      <button class="post__button" type="button" name="button"><span class="visually-hidden">заливка</span></button>
-      <div class="post__range-controls">
-        <input type="range" id="fill" name="fill" min="0" max="10">
-        <label for="fill">Fill</label>
-      </div>
-      <button class="post__button" type="button" name="button"><span class="visually-hidden">контрастность</span></button>
-      <div class="post__range-controls">
-        <input type="range" id="contrast" name="contrast" min="0" max="10">
-        <label for="contrast">Contrast</label>
-      </div>
-      <button class="post__button" type="submit" name="button">Запостить</button>
-      <button class="post__button" type="reset" name="button">Отмена</button>
-    </form>
-  </main>
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__logo">
-        <a>
-          <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="145" height="40" alt="расширенное лого приложения «Пинк»">
-        </a>
-      </div>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Twitter</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Facebook</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Youtube</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <span class="user__name">Сергей</span>
+        <span class="user__publication-time"><time class=" " datetime="2020-11-21T12:13:00" title="20 ноября 2020 г.">(25 часов назад)</time></span>
+        <div class="user__text">Самая кубанская в мире!</div>
+        <button class="user__button-like" type="button"><span class="visually-hidden">лайкнуть</span></button>
+        <div class="user__button-text">Нравится:</div>
+        <div class="user__button-text">4</div>
       </div>
     </div>
-  </footer>
+  </article>
+  <article class="user">
+    <h3 class="visually-hidden">Пост пользователя</h3>
+    <div>
+      <a><img class="user__img" alt="zaglushka" src="../img/photo-5-tablet.jpg"></a>
+      <div class="user__wrapper">
+        <span class="user__name">Максим</span>
+        <span class="user__publication-time"><time class=" " datetime="2020-11-21T12:13:00" title="20 ноября 2020 г.">(40 часов назад)</time></span>
+        <div class="user__text">Где снег-то?</div>
+        <button class="user__button-like" type="button"><span class="visually-hidden">лайкнуть</span></button>
+        <div class="user__button-text">Нравится:</div>
+        <div class="user__button-text">150</div>
+      </div>
+    </div>
+  </article>
+  <article class="user">
+    <h3 class="visually-hidden">Пост пользователя</h3>
+    <div>
+      <a><img class="user__img" alt="zaglushka" src="../img/photo-6-tablet.jpg"></a>
+      <div class="user__wrapper">
+        <span class="user__name">Надежда</span>
+        <span class="user__publication-time"><time class=" " datetime="2020-11-21T12:13:00" title="20 ноября 2020 г.">(45 часов назад)</time></span>
+        <div class="user__text">Всем GM и взаимные лайки!</div>
+        <button class="user__button-like" type="button"><span class="visually-hidden">лайкнуть</span></button>
+        <div class="user__button-text">Нравится:</div>
+        <div class="user__button-text">2560</div>
+      </div>
+    </article>
+  </div>
+</div>
+<form class="posted" action="https://echo.htmlacademy.ru/courses" method="post">
+  <span class="posted__callFor">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</span>
+  <img class="posted__img" alt="zaglushka"src="../img/photo-7-tablet.jpg">
+  <button class="posted__button" type="button" name="button"><span class="visually-hidden">обрезать</span></button>
+  <div class="posted__range-controls">
+    <input type="range" id="crop" name="crop" min="0" max="10">
+    <label for="crop" >Crop</label>
+  </div>
+  <button class="posted__button" type="button" name="button"><span class="visually-hidden">заливка</span></button>
+  <div class="posted__range-controls">
+    <input type="range" id="fill" name="fill" min="0" max="10">
+    <label for="fill">Fill</label>
+  </div>
+  <button class="posted__button" type="button" name="button"><span class="visually-hidden">контрастность</span></button>
+  <div class="posted__range-controls">
+    <input type="range" id="contrast" name="contrast" min="0" max="10">
+    <label for="contrast">Contrast</label>
+  </div>
+  <button class="posted__button" type="submit" name="button">Запостить</button>
+  <button class="posted__button" type="reset" name="button">Отмена</button>
+</form>
+</main>
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <div class="page-footer__logo">
+      <a>
+        <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="145" height="40" alt="расширенное лого приложения «Пинк»">
+      </a>
+    </div>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">Twitter</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">Youtube</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
