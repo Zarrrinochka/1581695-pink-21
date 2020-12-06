@@ -8,8 +8,22 @@
 .intro {
   background-image: url("../img/iphone-screen.png"), url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: left top;
-  width: 320px;
-  height: 462px;
+  background-size: contain, cover;
+  background-position: center;
   background-color: @dark-blue;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 348px;
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    margin-bottom: 39px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro {
+    margin-bottom: 51px;
+  }
 }
