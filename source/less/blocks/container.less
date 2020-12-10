@@ -1,3 +1,14 @@
-.container__head-main {
-  background-color: @dark-blue;
+.container {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  max-width: 668px;
+}
+
+@media (min-width: @desktop-width) {
+  max-width: 960px;
+  padding: 0 10px;
 }

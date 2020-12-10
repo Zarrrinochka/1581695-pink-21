@@ -11,7 +11,10 @@
 
 .advantages__list {
   background-color: @light-gray;
-  background-image: url("../img/hi-everyone.png");
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  //background-image: url("../img/hi-everyone.png");
   background-position: left top;
   background-repeat: no-repeat;
 }
@@ -20,7 +23,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  color: @dark-blue;
+  color: @black;
 }
 
 .advantages__description {
@@ -28,4 +31,83 @@
   font-size: 14px;
   line-height: 24px;
   color: @dark-blue;
+}
+
+.advantages__item {
+  list-style: none;
+}
+
+@media (max-width: 668px) {
+  .advantages__effect {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__effect {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .advantages__24 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    align-items: center;
+    color: @black;
+  }
+
+  .advantages__proof {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    color: @dark-blue;
+  }
+
+  .advantages__more-info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    color: @dark-pink;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__effect {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .advantages__24 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    align-items: center;
+    color: @black;
+  }
+
+  .advantages__proof {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    color: @dark-blue;
+  }
+
+  .advantages__more-info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    color: @dark-pink;
+  }
 }

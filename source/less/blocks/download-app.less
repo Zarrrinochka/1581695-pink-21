@@ -1,7 +1,6 @@
 .download-app {
-  background-color: @dark-blue;
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
 .download-app__a {
@@ -15,6 +14,7 @@
   box-sizing: border-box;
   border-radius: 29px;
   padding: 20px;
+  align-self: center;
 }
 
 .download-app__avialability {
@@ -22,15 +22,24 @@
   font-size: 14px;
   line-height: 24px;
   color: @white;
+  text-align: center;
 }
 
 .download-app__list {
+  padding: 0;
   display: flex;
+  justify-content: center;
+}
+
+.download-app__link {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
 }
 
 .download-app__apple {
   background-image: url("../img/apple-logo.svg");
-  display: block;
 }
 
 .download-app__android {
