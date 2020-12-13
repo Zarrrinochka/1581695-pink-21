@@ -1,9 +1,48 @@
 .download-app {
   display: flex;
   flex-direction: column;
+  background-color: @night-sky;
+}
+
+.download-app__slogan {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: @white;
+  text-align: center;
+  position: relative;
+  padding-bottom: 320px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -66px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/back-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    //background-color: @dark-blue;
+    z-index: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download-app__slogan {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .download-app__slogan {
+    padding-bottom: 0;
+  }
 }
 
 .download-app__a {
+  display: block;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;

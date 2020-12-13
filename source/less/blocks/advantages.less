@@ -4,6 +4,7 @@
   line-height: 29px;
   text-align: center;
   color: @dark-blue;
+  margin-top: 0;
 }
 
 .advantages__list {
@@ -33,18 +34,17 @@
   list-style: none;
 }
 
-@media (max-width: 668px) {
-  .advantages__effect {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0);
-  }
+.advantages__effect {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
+
 
 @media (min-width: @tablet-width) {
   .advantages__effect {
