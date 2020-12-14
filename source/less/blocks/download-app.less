@@ -1,4 +1,4 @@
-.download-app {
+.download-app__wrapper {
   display: flex;
   flex-direction: column;
   background-color: @night-sky;
@@ -48,7 +48,7 @@
 
 @media (min-width: @tablet-width) {
   .download-app__slogantext {
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -99,4 +99,23 @@
 
 .download-app__microsoft {
   background-image: url("../img/microsoft-logo.svg");
+}
+
+@media (min-width: @desktop-width) {
+  .download-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  .download-app__wrapper {
+    background-color: transparent;
+  }
+
+  .download-app__slogantext {
+    text-align: center;
+    padding-top: 114px;
+    padding-bottom: 50px;
+  }
 }
