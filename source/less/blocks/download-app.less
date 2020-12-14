@@ -5,11 +5,7 @@
 }
 
 .download-app__slogan {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  color: @white;
-  text-align: center;
+  display: block;
   position: relative;
   padding-bottom: 320px;
 
@@ -40,6 +36,22 @@
     padding-bottom: 0;
   }
 }
+
+.download-app__slogantext {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: @white;
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .download-app__slogantext {
+    text-align: left;
+  }
+}
+
 
 .download-app__a {
   display: block;
