@@ -26,65 +26,19 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
+    padding: 48px 0;
   }
-}
 
-.main-nav__item a {
-  text-decoration: none;
-  color: @white;
-}
+  .main-nav__item a {
+    text-decoration: none;
+    color: @white;
+  }
 
-.main-nav__item--1,
-.main-nav__item--2,
-.main-nav__item--3,
-.main-nav__item--4 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-@media (min-width: @desktop-width) {
   .main-nav {
     background-color: transparent;
   }
 
-  .main-nav__item {
-    background-color: @black30;
-    box-shadow: none;
-    padding: 48px 0;
-  }
-
   .main-nav__list {
-    grid-column-start: 2;
-    grid-column-end: 3;
     background-color: transparent;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-  }
-
-  .main-nav__item--1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-
-  .main-nav__item--2 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-
-  .main-nav__item--3 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-  }
-
-  .main-nav__item--4 {
-    grid-column-start: 4;
-    grid-column-end: 5;
-  }
-
-  .page-header__LogoButton {
-    background-color: @black30;
-    box-shadow: none;
-    grid-column-start: 1;
-    grid-column-end: 2;
   }
 }
