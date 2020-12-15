@@ -25,18 +25,6 @@
   }
 }
 
-@media (min-width: @desktop-width) {
-  .download-app__slogan {
-    padding-bottom: 0;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .download-app__slogan {
-    padding-bottom: 0;
-  }
-}
-
 .download-app__slogantext {
   font-weight: 300;
   font-size: 24px;
@@ -45,13 +33,6 @@
   text-align: center;
   margin: 0;
 }
-
-@media (min-width: @tablet-width) {
-  .download-app__slogantext {
-    text-align: center;
-  }
-}
-
 
 .download-app__a {
   display: block;
@@ -80,6 +61,7 @@
   padding: 0;
   display: flex;
   justify-content: center;
+  list-style-type: none;
 }
 
 .download-app__link {
@@ -101,21 +83,52 @@
   background-image: url("../img/microsoft-logo.svg");
 }
 
+
+.download-apptextstopbr {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+
+  .download-app__slogan {
+    padding-bottom: 0;
+    align-self: flex-start;
+  }
+
+  .download-app__slogantext {
+    text-align: center;
+  }
+
+  .download-app__wrapper {
+    align-self: flex-start;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .download-app {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: transparent;
   }
 
   .download-app__wrapper {
     background-color: transparent;
+    align-self: flex-start;
   }
 
   .download-app__slogantext {
     text-align: center;
-    padding-top: 114px;
+    padding-top: 41px;
     padding-bottom: 50px;
+    margin-left: 40px;
+    align-self: flex-start;
+  }
+
+  .download-apptextstopbr {
+    display: block;
+  }
+
+  .download-app__slogan {
+    padding-bottom: 0;
   }
 }
