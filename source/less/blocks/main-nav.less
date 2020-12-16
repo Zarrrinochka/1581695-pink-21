@@ -6,8 +6,6 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: 50% 50%;
 }
 
 .main-nav__item {
@@ -20,6 +18,11 @@
   text-align: center;
 }
 
+.main-nav__item a {
+  text-decoration: none;
+  color: @white;
+}
+
 @media (min-width: @desktop-width) {
   .main-nav__item {
     text-transform: none;
@@ -29,16 +32,12 @@
     padding: 48px 0;
   }
 
-  .main-nav__item a {
-    text-decoration: none;
-    color: @white;
-  }
-
   .main-nav {
     background-color: transparent;
   }
 
   .main-nav__list {
     background-color: transparent;
+    display: flex;
   }
 }
