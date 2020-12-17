@@ -5,10 +5,6 @@
   //background-color: @dark-blue;
 }
 
-.page-header__mobMenu {
-  background-color: @black30;
-}
-
 .page-header__LogoButton {
   box-shadow: 0 1px 0 @black;
   background-color: @dark-blue;
@@ -39,9 +35,9 @@
 @media (min-width: @desktop-width) {
   .page-header__wrapper {
     display: flex;
-    max-width: 960px;
-    padding: 0 10px;
+    padding: 0;
     margin: 0 auto;
+    background-color: @black30;
   }
 
   .page-header__toggle {
@@ -58,8 +54,9 @@
   .page-header__LogoButton {
     background-color: transparent;
     box-shadow: none;
-    padding-right: 0;
+    padding-right: 170px;
     display: flex;
+    flex-grow: 0;
   }
 
   .page-header {

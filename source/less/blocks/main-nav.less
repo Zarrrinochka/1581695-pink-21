@@ -24,20 +24,23 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav {
+    background-color: transparent;
+    flex-grow: 1;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 130px;
+  }
+
   .main-nav__item {
     text-transform: none;
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
     padding: 48px 0;
-  }
-
-  .main-nav {
-    background-color: transparent;
-  }
-
-  .main-nav__list {
-    background-color: transparent;
-    display: flex;
+    box-shadow: none;
   }
 }
