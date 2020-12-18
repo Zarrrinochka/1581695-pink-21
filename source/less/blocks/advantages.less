@@ -1,3 +1,8 @@
+.advantages {
+  padding-bottom: 325px;
+  background-color: @gray;
+}
+
 .advantages__intro {
   font-weight: 300;
   font-size: 24px;
@@ -39,8 +44,27 @@
 }
 
 @media (min-width: @tablet-width) {
+  .advantages {
+    padding-bottom: 0;
+  }
+
+  .advantages__intro--first {
+    padding-top: 58px;
+  }
+
+  .advantages__intro--last {
+    padding-bottom: 47px;
+  }
+
   .advantages__back {
     background-color: @white;
+    padding-top: 54px;
+    padding-bottom: 109px;
+  }
+
+  .advantages__list {
+    padding-left: 50%;
+    text-align: left;
   }
 
   .advantages__effect {
@@ -147,6 +171,7 @@
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 65px;
+    padding: 0;
   }
 
   .advantages__intro--last {
