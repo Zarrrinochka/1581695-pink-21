@@ -1,19 +1,9 @@
-.page-header {
-  //background-image: url("../img/back-mobile.jpg");
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //background-color: @dark-blue;
-}
-
 .page-header__LogoButton {
+  //background-color: @dark-blue;
   box-shadow: 0 1px 0 @black;
-  background-color: @dark-blue;
-  //background-color: @black30;
+  background-color: @black30;
   display: grid;
   grid-template-columns: 50% 50%;
-  //align-items: center;
-  //padding-left: 20px;
-  //padding-right: 20px;
 }
 
 .page-header__logo {
@@ -30,7 +20,17 @@
   grid-column-start: 2;
   grid-column-end: 3;
   justify-self: end;
+  margin-right: 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    padding-top: 24px;
+    padding-bottom: 39px;
+  }
+}
+
+/*десктоп*/
 
 @media (min-width: @desktop-width) {
   .page-header__back {
