@@ -95,6 +95,33 @@
 }
 
 @media (min-width: @tablet-width) {
+  .download-app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    place-items: flex-start;
+    margin-left: 20px;
+  }
+
+  .download-app__wrapper {
+    background-color: transparent;
+  }
+
+  .download-app__wrapper::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -66px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/back-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
   .download-app__limiter {
     margin-right: 0;
   }
@@ -103,19 +130,13 @@
     padding-bottom: 0;
 
     &::before {
-      background-image: url("../img/back-tablet.jpg");
-      top: -110px;
+      display: none;
     }
   }
 
   .download-app__slogantext {
     padding-top: 102px;
     padding-bottom: 39px;
-  }
-
-  .download-app__wrapper {
-    background-color: transparent;
-    padding: 0;
   }
 
   .download-app__a {
@@ -125,11 +146,10 @@
 
 @media (min-width: @desktop-width) {
   .download-app {
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    max-width: 960px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 
   .download-app__limiter {
