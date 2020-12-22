@@ -1,6 +1,7 @@
 .contacts {
   color: @dark-blue;
   background-color: @white;
+  text-align: center;
 }
 
 .contacts__title {
@@ -23,6 +24,7 @@
   line-height: 33px;
   color: @dark-pink;
   text-decoration: none;
+  display: block;
 }
 
 .contacts__street {
@@ -32,4 +34,22 @@
   line-height: 33px;
   color: @dark-pink;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__title {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  .contacts__var {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contacts__tel {
+    display: block;
+    text-align: center;
+  }
 }

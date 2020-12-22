@@ -1,3 +1,82 @@
-.page-header {
-  background-color: @black30;
+.page-header__LogoButton {
+  background-color: @dark-blue;
+  box-shadow: 0 1px 0 @black;
+  //background-color: @black30;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.page-header__logo {
+  padding-top: 19px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  padding-right: 0;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.page-header__toggle {
+  border: none;
+  background-color: transparent;
+  display: block;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-self: end;
+  margin-right: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    padding-top: 24px;
+    padding-bottom: 39px;
+  }
+}
+
+/*десктоп*/
+
+@media (min-width: @desktop-width) {
+  .page-header__back {
+    background-color: @black30;
+  }
+
+  .page-header__wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
+  .page-header__wrapper-inner {
+    display: flex;
+  }
+
+  .page-header__toggle {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+
+  .page-header__LogoButton {
+    background-color: transparent;
+    box-shadow: none;
+    padding-right: 170px;
+    display: flex;
+    flex-grow: 0;
+  }
+
+  .page-header {
+    background-image: url("../img/back-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .page-header__logo {
+    padding-top: 28px;
+    padding-left: 0;
+  }
 }

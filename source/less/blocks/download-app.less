@@ -1,14 +1,85 @@
-.download-app {
-  background-color: @dark-blue;
+.download-app__slogan {
+  display: block;
+  position: relative;
+  padding-top: 29px;
+  padding-bottom: 309px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -66px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/back-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+
+.download-app__slogantext {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: @white;
+  text-align: center;
+  margin: 0;
+}
+
+.download-app__wrapper {
+  padding-top: 28px;
+  padding-bottom: 38px;
+  background-color: @night-sky;
 }
 
 .download-app__a {
+  display: block;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   text-decoration: none;
   list-style-type: none;
   color: @white;
+  border: 3px solid @white;
+  box-sizing: border-box;
+  border-radius: 29px;
+  padding: 12px 36px;
+  text-align: center;
+  max-width: max-content;
+  margin: auto;
+}
+
+.download-app__list {
+  padding: 0;
+  margin-top: 32px;
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.download-app__link {
+  display: block;
+  width: 68px;
+  height: 60px;
+  background-repeat: no-repeat;
+}
+
+.download-app__apple {
+  background-image: url("../img/apple-logo.svg");
+  background-position: center;
+}
+
+.download-app__android {
+  background-image: url("../img/android-logo.svg");
+  background-position: center;
+}
+
+.download-app__microsoft {
+  background-image: url("../img/microsoft-logo.svg");
+  background-position: center;
 }
 
 .download-app__avialability {
@@ -16,4 +87,125 @@
   font-size: 14px;
   line-height: 24px;
   color: @white;
+  text-align: center;
+}
+
+.download-app__wrapper-inner,
+.download-app__slogantext {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .download-app {
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -110px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("../img/back-tablet.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+
+  .download-app__wrapper {
+    background-color: transparent;
+  }
+
+  .download-app__limiter {
+    padding-right: 340px;
+  }
+
+  .download-app__slogan {
+    padding-bottom: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .download-app__wrapper-inner {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .download-app__slogantext {
+    padding-top: 102px;
+    padding-bottom: 39px;
+  }
+
+  .download-app__a {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download-app {
+    padding-top: 114px;
+    padding-bottom: 130px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .download-app__limiter {
+    padding-right: 650px;
+  }
+
+  .download-app__slogan {
+    padding: 0;
+    margin: 0;
+  }
+
+  .download-app__slogantext {
+    font-weight: 300;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 50px;
+    line-height: 68px;
+    padding: 0;
+  }
+
+  .download-app__wrapper {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+  }
+
+  .download-app__a {
+    font-size: 21px;
+    border-radius: 29px;
+    padding: 16px 20px;
+    margin-bottom: 75px;
+  }
+
+  .download-app__list {
+    margin-top: 0;
+    margin-bottom: 58px;
+    justify-content: space-evenly;
+  }
+
+  .download-app__avialability {
+    font-size: 18px;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .download-apptextstopbr {
+    display: block;
+  }
 }

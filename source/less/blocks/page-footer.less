@@ -1,0 +1,88 @@
+
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.page-footer__logo {
+  margin-bottom: 41px;
+}
+
+.page-footer__social-list {
+  list-style-type: none; /* Убираем маркеры для ul li*/
+  margin: 0; /*убираем автоматику ul*/
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 53px;
+}
+
+.page-footer__social-item a {
+  margin-right: 14px;
+  display: block;
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.page-footer__link::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-footer__link--twitter::before {
+  background-image: url("../img/twitter.svg");
+  border: 3px solid @dark-blue10;
+  border-radius: 50px;
+}
+
+.page-footer__link--facebook::before {
+  background-image: url("../img/facebook.svg");
+  border: 3px solid @dark-blue10;
+  border-radius: 50px;
+}
+
+.page-footer__link--youtube::before {
+  background-image: url("../img/youtube.svg");
+  border: 3px solid @dark-blue10;
+  border-radius: 50px;
+}
+
+.page-footer__copyright-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: @dark-blue;
+  margin-right: 15px;
+  display: block;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer__place {
+  display: block;
+  position: relative;
+}
+
+.page-footer__place::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/html-academy.svg");
+  width: 27px;
+  height: 34px;
+}
