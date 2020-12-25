@@ -1,5 +1,6 @@
 .page-main {
   background-color: @white;
+  position: relative;
 }
 
 .page-main__intro {
@@ -13,9 +14,52 @@
   color: @white;
 }
 
-.page-main__text {
+.page-main__text,
+.page-main__text2 {
+  display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: @dark-blue;
+  text-align: center;
+  padding: 39px 0;
+}
+
+.page-main__text2 {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__text,
+  .page-main__text2 {
+    display: block;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 0;
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
+  .page-main__text {
+    padding-top: 100px;
+  }
+
+  .page-main__text2 {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 82px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__text-wrapper {
+    padding: 100px 85px;
+    text-align: center;
+  }
+
+  .page-main__text,
+  .page-main__text2 {
+    display: inline;
+    padding: 0;
+  }
 }
