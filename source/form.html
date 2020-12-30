@@ -61,106 +61,108 @@
       </div>
     </div>
   </header>
-  <main class="page-main container">
-    <div class="page-main__text-wrapper">
-      <span class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</span>
-      <span class="page-main__text2">Пожалуйста, заполните форму ниже:</span>
+  <main class="page-main">
+    <div class="container">
+      <div class="page-main__text-wrapper">
+        <span class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</span>
+        <span class="page-main__text2">Пожалуйста, заполните форму ниже:</span>
+      </div>
+      <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
+        <fieldset class="form__fieldset form__fieldset--name">
+          <legend class="visually-hidden">fullName</legend>
+          <p class="form__filed-wrapper form__filed-wrapper--1">
+            <label class="form__label form__label--1" for="surname">Фамилия:</label>
+            <input class="form__input" id="surname" type="text" name="surname" value="Укажите фамилию *">
+          </p>
+          <p class="form__filed-wrapper form__filed-wrapper--1">
+            <label class="form__label form__label--1" for="name">Имя:</label>
+            <input class="form__input" id="name" type="text" name="name" value="Введите ваше имя *">
+          </p>
+          <p class="form__filed-wrapper form__filed-wrapper--1">
+            <label class="form__label form__label--1" for="patronymic">Отчество:</label>
+            <input class="form__input" id="patronymic" type="text" name="patronymic" value="Ну и отчество тоже">
+          </p>
+        </fieldset>
+        <fieldset class="form__achievements">
+          <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+          <div class="form__achievements-wrapper">
+            <div class="form__achievements-lilwrapper">
+              <p class="checkbox">
+                <input class="cheсkbox__input visually-hidden" type="checkbox" name="shark" id="shark" checked>
+                <label class="checkbox__label checkbox__label--checked" for="shark">Сделал селфи с акулой</label>
+              </p>
+              <p class="checkbox">
+                <input class="cheсkbox__input visually-hidden" type="checkbox" name="sunburn" id="sunburn" checked>
+                <label class="checkbox__label checkbox__label--checked" for="sunburn">Обгорел на пляже</label>
+              </p>
+            </div>
+            <div class="form__achievements-lilwrapper">
+              <p class="checkbox">
+                <input class="cheсkbox__input visually-hidden" type="checkbox" name="noris" id="noris" >
+                <label class="checkbox__label checkbox__label--notchecked" for="noris">Видел Чака Норриса</label>
+              </p>
+              <p class="checkbox">
+                <input class="cheсkbox__input visually-hidden" type="checkbox" name="souvenirs" id="souvenirs" >
+                <label class="checkbox__label checkbox__label--notchecked" for="souvenirs">Накупил сувениров</label>
+              </p>
+            </div>
+            <div class="form__achievements-lilwrapper">
+              <p class="checkbox">
+                <input class="cheсkbox__input visually-hidden" type="checkbox" name="tower" id="tower" checked>
+                <label class="checkbox__label checkbox__label--checked" for="tower">Удержал башню</label>
+              </p>
+              <p class="checkbox">
+                <input class="cheсkbox__input visually-hidden" type="checkbox" name="destroy" id="destroy">
+                <label class="checkbox__label checkbox__label--notchecked" for="destroy">Разгромил отель</label>
+              </p>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--number">
+          <legend class="form__contacts">Контактная информация</legend>
+          <p class="form__filed-wrapper form__filed-wrapper--2">
+            <label class="form__label form__label--2" for="tel">Номер телефона</label>
+            <input class="form__input form__input--tel" id="tel" type="text" name="tel" value="Номер, пожалуйста">
+          </p>
+          <p class="form__filed-wrapper form__filed-wrapper--2">
+            <label class="form__label form__label--2"for="email">Адрес почты</label>
+            <input class="form__input form__input--email" id="email" type="text" name="email" value="Введите почту *">
+          </p>
+        </fieldset>
+        <fieldset class="radio">
+          <legend class="radio__legend">С каким приложением путешествовали?</legend>
+          <p class="checkbox">
+            <input class="radio__input visually-hidden" name="app" type="radio" value="iOS" id="iOS">
+            <label class="radio__label radio__label--checked" for="iOS" >Pink для iOS</label>
+          </p>
+          <p class="checkbox">
+            <input class="radio__input visually-hidden" name="app" type="radio"  value="android" id="android">
+            <label class="radio__label radio__label--notchecked" for="android">Pink на Android</label>
+          </p>
+          <p class="checkbox">
+            <input class="radio__input visually-hidden" name="app" type="radio" value="Windows" id="WindowsPhone" checked>
+            <label class="radio__label radio__label--notchecked" for="WindowsPhone">Windows Phone</label>
+          </p>
+        </fieldset>
+        <fieldset class="form__emotionsDescribe">
+          <legend class="form__emotionsLegend">Опишите свои эмоции</legend>
+          <label class="visually-hidden">emotions</label>
+          <textarea class="form__emotionsText" name="comment" id="comment-field" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </fieldset>
+        <p class="form__buttonwrap"><button class="form__buttonSend" type="submit">Отправить форму</button></p>
+        <p class="form__required">* — обязательные поля</p>
+      </form>
+      <!-- <div class="modal modal__notok">
+      <p class="modal__text">Что-то пошло не так!</p>
+      <p class="modal__text2">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal__close"type="button" name="ok">Ok</button>
     </div>
-    <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
-      <fieldset class="form__fieldset form__fieldset--name">
-        <legend class="visually-hidden">fullName</legend>
-        <p class="form__filed-wrapper form__filed-wrapper--1">
-          <label class="form__label form__label--1" for="surname">Фамилия:</label>
-          <input class="form__input" id="surname" type="text" name="surname" value="Укажите фамилию *">
-        </p>
-        <p class="form__filed-wrapper form__filed-wrapper--1">
-          <label class="form__label form__label--1" for="name">Имя:</label>
-          <input class="form__input" id="name" type="text" name="name" value="Введите ваше имя *">
-        </p>
-        <p class="form__filed-wrapper form__filed-wrapper--1">
-          <label class="form__label form__label--1" for="patronymic">Отчество:</label>
-          <input class="form__input" id="patronymic" type="text" name="patronymic" value="Ну и отчество тоже">
-        </p>
-      </fieldset>
-      <fieldset class="form__achievements">
-        <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
-        <div class="form__achievements-wrapper">
-          <div class="form__achievements-lilwrapper">
-            <p class="checkbox">
-              <input class="cheсkbox__input visually-hidden" type="checkbox" name="shark" id="shark" checked>
-              <label class="checkbox__label checkbox__label--checked" for="shark">Сделал селфи с акулой</label>
-            </p>
-            <p class="checkbox">
-              <input class="cheсkbox__input visually-hidden" type="checkbox" name="sunburn" id="sunburn" checked>
-              <label class="checkbox__label checkbox__label--checked" for="sunburn">Обгорел на пляже</label>
-            </p>
-          </div>
-          <div class="form__achievements-lilwrapper">
-            <p class="checkbox">
-              <input class="cheсkbox__input visually-hidden" type="checkbox" name="noris" id="noris" >
-              <label class="checkbox__label checkbox__label--notchecked" for="noris">Видел Чака Норриса</label>
-            </p>
-            <p class="checkbox">
-              <input class="cheсkbox__input visually-hidden" type="checkbox" name="souvenirs" id="souvenirs" >
-              <label class="checkbox__label checkbox__label--notchecked" for="souvenirs">Накупил сувениров</label>
-            </p>
-          </div>
-          <div class="form__achievements-lilwrapper">
-            <p class="checkbox">
-              <input class="cheсkbox__input visually-hidden" type="checkbox" name="tower" id="tower" checked>
-              <label class="checkbox__label checkbox__label--checked" for="tower">Удержал башню</label>
-            </p>
-            <p class="checkbox">
-              <input class="cheсkbox__input visually-hidden" type="checkbox" name="destroy" id="destroy">
-              <label class="checkbox__label checkbox__label--notchecked" for="destroy">Разгромил отель</label>
-            </p>
-          </div>
-        </div>
-      </fieldset>
-      <fieldset class="form__fieldset form__fieldset--number">
-        <legend class="form__contacts">Контактная информация</legend>
-        <p class="form__filed-wrapper form__filed-wrapper--2">
-          <label class="form__label form__label--2" for="tel">Номер телефона</label>
-          <input class="form__input form__input--tel" id="tel" type="text" name="tel" value="Номер, пожалуйста">
-        </p>
-        <p class="form__filed-wrapper form__filed-wrapper--2">
-          <label class="form__label form__label--2"for="email">Адрес почты</label>
-          <input class="form__input form__input--email" id="email" type="text" name="email" value="Введите почту *">
-        </p>
-      </fieldset>
-      <fieldset class="radio">
-        <legend class="radio__legend">С каким приложением путешествовали?</legend>
-        <p class="checkbox">
-          <input class="radio__input visually-hidden" name="app" type="radio" value="iOS" id="iOS">
-          <label class="radio__label radio__label--checked" for="iOS" >Pink для iOS</label>
-        </p>
-        <p class="checkbox">
-          <input class="radio__input visually-hidden" name="app" type="radio"  value="android" id="android">
-          <label class="radio__label radio__label--notchecked" for="android">Pink на Android</label>
-        </p>
-        <p class="checkbox">
-          <input class="radio__input visually-hidden" name="app" type="radio" value="Windows" id="WindowsPhone" checked>
-          <label class="radio__label radio__label--notchecked" for="WindowsPhone">Windows Phone</label>
-        </p>
-      </fieldset>
-      <fieldset class="form__emotionsDescribe">
-        <legend class="form__emotionsLegend">Опишите свои эмоции</legend>
-        <label class="visually-hidden">emotions</label>
-        <textarea class="form__emotionsText" name="comment" id="comment-field" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
-      </fieldset>
-      <p class="form__buttonwrap"><button class="form__buttonSend" type="submit">Отправить форму</button></p>
-      <p class="form__required">* — обязательные поля</p>
-    </form>
-    <!-- <div class="modal modal__notok">
-    <p class="modal__text">Что-то пошло не так!</p>
-    <p class="modal__text2">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="modal__close"type="button" name="ok">Ok</button>
-  </div>
-  <div class="modal modal__ok">
-  <p class="modal__text">Ваша заявка отправлена</b>
-  <p class="modal__text2">Спасибо за ваше участие, ваша заявка  уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-  <button class="modal__close modal__close-pseudo" type="button" name="close">Закрыть окно</button>
-</div> -->
+    <div class="modal modal__ok">
+    <p class="modal__text">Ваша заявка отправлена</b>
+    <p class="modal__text2">Спасибо за ваше участие, ваша заявка  уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+    <button class="modal__close modal__close-pseudo" type="button" name="close">Закрыть окно</button>
+  </div> -->
+    </div>
 </main>
 <footer class="back__white">
   <div class="container">
