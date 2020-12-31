@@ -1,0 +1,38 @@
+.checkbox {
+  padding: 0 22px;
+  margin-bottom: 69px;
+  margin-top: 0;
+}
+
+.checkbox__label,
+.checkbox__label--notchecked,
+.checkbox__label--checked {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: @dark-blue;
+  display: block;
+  position: relative;
+  padding-left: 25px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: -22px;
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+}
+
+.checkbox__label--checked::before {
+  background-image: url("../img/checkbox-checked.svg");
+}
+
+.checkbox__label--notchecked::before {
+  background-image: url("../img/checkbox.svg");
+}
