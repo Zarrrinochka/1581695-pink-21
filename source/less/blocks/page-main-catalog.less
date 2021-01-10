@@ -1,10 +1,18 @@
-.page-main {
+.page-main-catalog {
   background-color: @white;
   position: relative;
   overflow: hidden;
 }
 
-.page-main__intro {
+.page-main-catalog__text-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 18px;
+  padding-right: 18px;
+  text-align: center;
+}
+
+.page-main-catalog__intro {
   //background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: left top;
@@ -15,56 +23,38 @@
   color: @white;
 }
 
-.page-main__text,
-.page-main__text2 {
-  display: block;
+.page-main-catalog__text,
+.page-main-catalog__text2 {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: @dark-blue;
-  text-align: center;
-  padding: 39px 0;
+  padding: 0;
+  margin: 0;
 }
 
-.page-main__text2 {
-  display: none;
+.page-main-catalog__text2 {
+  display: block;
 }
-
-// .page-main__text-wrapper {
-//   padding-left: 10px;
-//   padding-right: 10px;
-// }
 
 @media (min-width: @tablet-width) {
-  .page-main__text,
-  .page-main__text2 {
-    display: block;
+  .page-main-catalog__text,
+  .page-main-catalog__text2 {
     font-size: 18px;
     margin: 0;
-    padding-bottom: 0;
-    padding-left: 55px;
-    padding-right: 55px;
-  }
-
-  .page-main__text {
-    padding-top: 100px;
-  }
-
-  .page-main__text2 {
-    display: block;
-    padding-top: 0;
-    padding-bottom: 82px;
+    padding: 55px 0;
+    display: inline;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-main__text-wrapper {
+  .page-main-catalog__text-wrapper {
     padding: 100px 85px;
     text-align: center;
   }
 
-  .page-main__text,
-  .page-main__text2 {
+  .page-main-catalog__text,
+  .page-main-catalog__text2 {
     display: inline;
     padding: 0;
   }

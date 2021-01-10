@@ -1,8 +1,10 @@
 .posted {
-  background-color: @light-gray;
+  text-align: center;
+  margin-top: 40px;
 }
 
-.posted__callFor {
+.posted__callFor,
+.posted__callFor2 {
   background-color: @white;
   font-weight: 400;
   font-size: 14px;
@@ -10,29 +12,54 @@
   color: @dark-blue;
 }
 
-.posted__buttonDo {
+.posted__callFor2 {
+  display: block;
+  padding-bottom: 40px;
+}
+
+.posted__lilwrapper {
+  background-color: @light-gray;
+  padding: 20px 0;
+}
+
+.posted__button {
+  border: none;
+}
+
+
+.posted__buttonDo,
+.posted__buttonDont {
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   color: @dark-pink;
-  background-color: @white;
+  background-color: transparent;
   border: 3px solid @dark-pink;
   box-sizing: border-box;
   border-radius: 30px;
   padding: 18px 89px;
 }
 
+.posted__buttonDo {
+  padding: 18px 89px;
+  margin-top: 38px;
+  margin-bottom: 12px;
+}
+
 .posted__buttonDont {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
-  color: @dark-blue;
-  background-color: @white;
-  border: 3px solid @dark-blue;
-  box-sizing: border-box;
-  border-radius: 30px;
   opacity: 0.1;
   padding: 18px 100px;
+  margin-bottom: 41px;
+}
+
+.posted__range-controls {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
