@@ -91,16 +91,30 @@
     right: 57px;
   }
 
-  .user__button-text {
+  .user__publication-wrapper {
     display: flex;
+    flex-wrap: wrap;
   }
 
-  .user__button {
+  .user__publication-button {
     order: 1;
+    display: flex;
+    margin-left: auto;
   }
 
-  .user__text {
+  .user__publication-text {
     order: 2;
     display: block;
+  }
+
+  .user__publication-button-like {
+    order: 2;
+  }
+
+  .user__net-wrapper {
+    // display: flex;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
 }
