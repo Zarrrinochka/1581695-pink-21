@@ -62,6 +62,10 @@
   display: contents;
 }
 
+.posted__range-controls {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .posted__lilwrapper {
     background-color: @light-gray;
@@ -70,8 +74,7 @@
   }
 
   .posted__range-controls {
-    // как убрать visually-hidden
-    display: none;
+    display: flex;
   }
 
   .posted__wrapper-withbuttons {
@@ -79,13 +82,26 @@
     flex-wrap: wrap;
   }
 
-  .posted__button {
+  .posted__buttonAndRange-wrapper {
+    justify-content: flex-start;
+  }
+
+  .posted__buttonAndRange {
     width: 100%;
+    display: flex;
   }
 
   .posted__buttonDo,
   .posted__buttonDont {
     height: fit-content;
+  }
+
+  .posted__buttonDo {
+    padding: 21px 79px;
+  }
+
+  .posted__buttonDont {
+    padding: 21px 94px;
   }
 }
 
@@ -95,9 +111,22 @@
   }
 
   .posted__button,
-  .posted__range-controls,
+  .posted__range-controls {
+    width: 100%;
+  }
+
   .posted__buttonDo,
   .posted__buttonDont {
-    width: 100%;
+    margin: 0;
+  }
+
+  .posted__buttonDo {
+    padding: 21px 42px;
+    margin-right: 44px;
+    margin-left: 90px;
+  }
+
+  .posted__buttonDont {
+    padding: 21px 55px;
   }
 }
