@@ -25,6 +25,7 @@
 .posted__buttonAndRange-wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .posted__button {
@@ -57,13 +58,46 @@
   margin-bottom: 41px;
 }
 
-.posted__range-controls {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
+.posted__buttonAndRange {
+  display: contents;
+}
+
+@media (min-width: @tablet-width) {
+  .posted__lilwrapper {
+    background-color: @light-gray;
+    padding: 20px 0;
+    display: flex;
+  }
+
+  .posted__range-controls {
+    // как убрать visually-hidden
+    display: none;
+  }
+
+  .posted__wrapper-withbuttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .posted__button {
+    width: 100%;
+  }
+
+  .posted__buttonDo,
+  .posted__buttonDont {
+    height: fit-content;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .posted__img {
+    margin-left: 80px;
+  }
+
+  .posted__button,
+  .posted__range-controls,
+  .posted__buttonDo,
+  .posted__buttonDont {
+    width: 100%;
+  }
 }

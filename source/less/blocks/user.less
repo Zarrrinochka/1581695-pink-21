@@ -24,6 +24,11 @@
   right: 20px;
 }
 
+.user__panorame-img {
+  object-fit: cover;
+  width: 100%;
+}
+
 .user__name {
   font-size: 14px;
   font-weight: 700;
@@ -69,22 +74,11 @@
 }
 
 @media (min-width: @tablet-width) {
-  .user__main-wrapper {
-    background-image: url("../img/panorama-tablet2.jpg");
-    width: 660px;
-    height: 509px;
-  }
-
-  .user__panorame-img {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0);
-  }
+  // .user__main-wrapper {
+  //   background-image: url("../img/panorama-tablet2.jpg");
+  //   width: 660px;
+  //   height: 509px;
+  // }
 
   .user__panorame {
     top: 20px;
@@ -112,9 +106,14 @@
   }
 
   .user__net-wrapper {
-    // display: flex;
-    // flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // display: grid;
+    // grid-template-columns: 50% 50%;
+  }
+
+  .user__net {
+    width: min-content;
   }
 }
