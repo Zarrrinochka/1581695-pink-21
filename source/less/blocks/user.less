@@ -9,6 +9,7 @@
 
 .user__main-wrapper {
   position: relative;
+  height: 137px;
 }
 
 .user__panorame {
@@ -27,6 +28,7 @@
 .user__panorame-img {
   object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 
 .user__name {
@@ -79,6 +81,10 @@
     right: 57px;
   }
 
+  .user__main-wrapper {
+    height: 509px;
+  }
+
   .user__publication-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -107,5 +113,11 @@
 
   .user__net {
     width: min-content;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user__main-wrapper {
+    height: 508px;
   }
 }
