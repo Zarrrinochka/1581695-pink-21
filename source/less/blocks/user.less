@@ -4,6 +4,12 @@
 
 .user__wrapper {
   background-color: @light-gray;
+  padding: 25px 10px 25px 17px;
+}
+
+.user__main-wrapper {
+  position: relative;
+  height: 137px;
 }
 
 .user__panorame {
@@ -14,6 +20,15 @@
   text-transform: uppercase;
   background-color: @dark-pink;
   padding: 13px 19px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.user__panorame-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .user__name {
@@ -40,10 +55,69 @@
   color: @dark-blue;
 }
 
+.user__button {
+  display: flex;
+  border: none;
+}
+
+.user__button-like {
+  border: none;
+  margin-right: 18px;
+  background-color: transparent;
+}
+
 .user__button-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
   color: @dark-pink;
+  margin-right: 3px;
+}
+
+@media (min-width: @tablet-width) {
+  .user__panorame {
+    top: 20px;
+    right: 57px;
+  }
+
+  .user__main-wrapper {
+    height: 509px;
+  }
+
+  .user__publication-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .user__publication-button {
+    order: 1;
+    display: flex;
+    margin-left: auto;
+  }
+
+  .user__publication-text {
+    order: 2;
+    display: block;
+  }
+
+  .user__publication-button-like {
+    order: 2;
+  }
+
+  .user__net-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .user__net {
+    width: min-content;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user__main-wrapper {
+    height: 508px;
+  }
 }

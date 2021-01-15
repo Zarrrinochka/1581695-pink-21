@@ -1,8 +1,10 @@
 .posted {
-  background-color: @light-gray;
+  text-align: center;
+  margin-top: 40px;
 }
 
-.posted__callFor {
+.posted__callFor,
+.posted__callFor2 {
   background-color: @white;
   font-weight: 400;
   font-size: 14px;
@@ -10,29 +12,125 @@
   color: @dark-blue;
 }
 
-.posted__buttonDo {
+.posted__callFor2 {
+  display: block;
+  padding-bottom: 40px;
+}
+
+.posted__lilwrapper {
+  background-color: @light-gray;
+  padding: 20px 0;
+}
+
+.posted__buttonAndRange-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.posted__button {
+  border: none;
+}
+
+.posted__buttonDo,
+.posted__buttonDont {
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   color: @dark-pink;
-  background-color: @white;
+  background-color: transparent;
   border: 3px solid @dark-pink;
   box-sizing: border-box;
   border-radius: 30px;
   padding: 18px 89px;
 }
 
+.posted__buttonDo {
+  padding: 18px 89px;
+  margin-top: 38px;
+  margin-bottom: 12px;
+}
+
 .posted__buttonDont {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
-  color: @dark-blue;
-  background-color: @white;
-  border: 3px solid @dark-blue;
-  box-sizing: border-box;
-  border-radius: 30px;
   opacity: 0.1;
   padding: 18px 100px;
+  margin-bottom: 41px;
+}
+
+.posted__buttonAndRange {
+  display: contents;
+}
+
+.posted__range-controls {
+  display: none;
+}
+
+.posted__range-controlsLast {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .posted__lilwrapper {
+    background-color: @light-gray;
+    padding: 20px 0;
+    display: flex;
+  }
+
+  .posted__range-controls {
+    display: flex;
+  }
+
+  .posted__wrapper-withbuttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .posted__buttonAndRange-wrapper {
+    justify-content: flex-start;
+  }
+
+  .posted__buttonAndRange {
+    width: 100%;
+    display: flex;
+  }
+
+  .posted__buttonDo,
+  .posted__buttonDont {
+    height: fit-content;
+  }
+
+  .posted__buttonDo {
+    padding: 21px 79px;
+  }
+
+  .posted__buttonDont {
+    padding: 21px 94px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .posted__img {
+    margin-left: 80px;
+  }
+
+  .posted__button,
+  .posted__range-controls {
+    width: 100%;
+  }
+
+  .posted__buttonDo,
+  .posted__buttonDont {
+    margin: 0;
+  }
+
+  .posted__buttonDo {
+    padding: 21px 42px;
+    margin-right: 44px;
+    margin-left: 90px;
+  }
+
+  .posted__buttonDont {
+    padding: 21px 55px;
+  }
 }

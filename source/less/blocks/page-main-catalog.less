@@ -1,0 +1,61 @@
+.page-main-catalog {
+  background-color: @white;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-main-catalog__text-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 18px;
+  padding-right: 18px;
+  text-align: center;
+}
+
+.page-main-catalog__intro {
+  //background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-color: @dark-blue;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: @white;
+}
+
+.page-main-catalog__text,
+.page-main-catalog__text2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: @dark-blue;
+  padding: 0;
+  margin: 0;
+}
+
+.page-main-catalog__text2 {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main-catalog__text,
+  .page-main-catalog__text2 {
+    font-size: 18px;
+    margin: 0;
+    padding: 55px 0;
+    display: inline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main-catalog__text-wrapper {
+    padding: 100px 85px;
+    text-align: center;
+  }
+
+  .page-main-catalog__text,
+  .page-main-catalog__text2 {
+    display: inline;
+    padding: 0;
+  }
+}
