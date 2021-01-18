@@ -16,6 +16,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-mobile@2x.jpg");
+    }
   }
 }
 
@@ -26,6 +30,41 @@
   color: @white;
   text-align: center;
   margin: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: -350px;
+    background-image: url("../img/phone.png");
+    background-repeat: no-repeat;
+    z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/phone@2x.png");
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 112px;
+    left: 104px;
+    right: 0;
+    bottom: -350px;
+    background-image: url("../img/screen.png");
+    background-repeat: no-repeat;
+    z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/screen@2x.png");
+    }
+  }
 }
 
 .download-app__wrapper {
@@ -113,6 +152,10 @@
       background-repeat: no-repeat;
       background-size: cover;
       z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/back-tablet@2x.jpg");
+      }
     }
   }
 
