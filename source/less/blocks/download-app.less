@@ -48,23 +48,6 @@
       background-image: url("../img/phone@2x.png");
     }
   }
-
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 112px;
-    left: 104px;
-    right: 0;
-    bottom: -350px;
-    background-image: url("../img/screen.png");
-    background-repeat: no-repeat;
-    z-index: 1;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/screen@2x.png");
-    }
-  }
 }
 
 .download-app__wrapper {
@@ -184,6 +167,19 @@
   .download-app__slogantext {
     padding-top: 102px;
     padding-bottom: 39px;
+
+    &::before {
+      top: -50px;
+      left: 0;
+      right: -400px;
+      bottom: -350px;
+      background-image: url("../img/phone-tab.png");
+      z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/phone-tab@2x.png");
+      }
+    }
   }
 
   .download-app__a {
@@ -197,7 +193,11 @@
     padding-bottom: 130px;
 
     &::before {
-      display: none;
+      background-image: url("../img/back-desk.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/back-desk@2x.jpg");
+      }
     }
   }
 
@@ -218,6 +218,19 @@
     font-size: 50px;
     line-height: 68px;
     padding: 0;
+
+    &::before {
+      top: 100px;
+      left: 0;
+      right: -800px;
+      bottom: -450px;
+      background-image: url("../img/phone-desk.png");
+      z-index: 1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/phone-desk@2x.png");
+      }
+    }
   }
 
   .download-app__wrapper {
