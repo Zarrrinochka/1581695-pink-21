@@ -1,6 +1,48 @@
 .table {
   border-collapse: collapse;
   width: 100%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+th {
+  display: none;
+}
+
+td {
+  height: 45px;
+}
+
+.table__hit-a {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -100px;
+    background-image: url("../img/hit-ribbon.svg");
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+}
+
+.table__hit {
+  position: absolute;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  color: @white;
+  transform: rotate(-45deg);
+  background-color: transparent;
+  z-index: 2;
+  top: 15px;
+  left: 15px;
 }
 
 .table__lines,
@@ -14,11 +56,45 @@
   background-color: @white;
 }
 
+.table__yes {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../img/yes.svg");
+    background-repeat: no-repeat;
+    top: 15px;
+    left: 190px;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.table__no {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../img/no.svg");
+    background-repeat: no-repeat;
+    top: 15px;
+    left: 190px;
+    right: 0;
+    bottom: 0;
+  }
+}
+
 .table__col {
   color: @dark-blue;
   font-weight: 400;
   background: @white;
   text-transform: uppercase;
+  padding: 25px 25px 77px 25px;
+  text-align: left;
 }
 
 .table__tariff,
@@ -40,12 +116,26 @@
 .table__tariff {
   font-weight: 700;
   font-size: 16px;
+  vertical-align: bottom;
 }
 
 .table__price-td {
   font-weight: 300;
   font-size: 14px;
   background-color: @dark-blue;
+  vertical-align: top;
+}
+
+.table__pink-td::before,
+.table__emo-td::before,
+.table__comment-td::before {
+  color: #283645;
+  font-weight: 400;
+  background: @white;
+  text-transform: uppercase;
+  padding: 25px;
+  padding-right: 77px;
+  text-align: left;
 }
 
 
@@ -77,8 +167,13 @@
 }
 
 @media (min-width: @tablet-width) {
+  th {
+    display: contents;
+  }
+
   .table__col {
     text-transform: none;
+    padding: 15px;
   }
 
   .table__pink-td {
