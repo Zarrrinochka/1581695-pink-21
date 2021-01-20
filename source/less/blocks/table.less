@@ -5,11 +5,11 @@
   white-space: nowrap;
 }
 
-th {
+.table th {
   display: none;
 }
 
-td {
+.table td {
   height: 45px;
 }
 
@@ -167,8 +167,8 @@ td {
 }
 
 @media (min-width: @tablet-width) {
-  th {
-    display: contents;
+  .table th {
+    display: block;
   }
 
   .table__col {
