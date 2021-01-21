@@ -197,7 +197,7 @@
         <td class="table__yes table__comment-td" data-title="комментарии"><div class="visually-hidden">Да</div></td>
       </tr>
     </table>
-    <p class="table__toggles slider__toggles">
+    <p class="table__toggles slider__toggles table__toggles-off">
       <button class="slider__toggle" type="button"><span class="visually-hidden"></span></button>
       <button class="slider__toggle slider__toggle--current" type="button"><span class="visually-hidden">2</span></button>
       <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
@@ -221,7 +221,13 @@
     </div>
   </address>
 </section>
-<div class="contacts__map"><img class="contacts__mapImg" src="img/map.jpg" alt="map"></div>
+<div class="contacts__map">
+  <picture>
+    <source media="(min-width: 960px)" srcset="img/map-desk.jpg">
+    <source media="(min-width: 660px)" srcset="img/map-tab.jpg">
+    <img class="contacts__mapImg" src="img/map.jpg" alt="map">
+  </picture>
+</div>
 </main>
 <footer class="back__white">
   <div class="container">

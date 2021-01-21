@@ -59,11 +59,58 @@
 }
 
 @media (min-width: @desktop-width) {
+  .reviews__wrapper {
+    margin-top: 60px;
+  }
+
   .reviews__author-description {
     display: block;
   }
 
   .reviews__text {
     margin-bottom: 50px;
+    position: relative;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-image: url("../img/quotes.svg");
+      background-repeat: no-repeat;
+      top: -100px;
+      left: 380px;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .reviews__author-name {
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background-image: url("../img/left-arrow.svg");
+      background-repeat: no-repeat;
+      top: -110px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-image: url("../img/right-arrow.svg");
+      background-repeat: no-repeat;
+      top: -110px;
+      left: 830px;
+      right: 0;
+      bottom: 0;
+    }
   }
 }

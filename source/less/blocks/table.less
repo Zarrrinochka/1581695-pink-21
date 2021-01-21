@@ -168,7 +168,14 @@
 
 @media (min-width: @tablet-width) {
   .table th {
-    display: block;
+    display: table-cell;
+    margin: 0;
+    padding: 15px;
+    width: 153px;
+  }
+
+  .table__price-td {
+    width: 152px;
   }
 
   .table__col {
@@ -192,6 +199,16 @@
     &::before {
       display: none;
     }
+  }
+
+  .table__yes::after,
+  .table__no::after {
+    top: 15px;
+    left: 60px;
+  }
+
+  .table__toggles-off {
+    display: none;
   }
 }
 
