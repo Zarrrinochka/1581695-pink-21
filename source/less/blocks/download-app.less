@@ -154,7 +154,7 @@
   }
 
   .download-app__limiter {
-    padding: 93px 50% 115px 0;
+    padding: 93px 320px 115px 0;
 
     &::before {
       bottom: 0;
@@ -166,11 +166,6 @@
       @media (min-resolution: 2dppx) {
         background-image: url("../img/phone-tab@2x.png");
       }
-    }
-
-    .download-app__wrapper,
-    .download-app__slogan {
-      margin-left: 10px;
     }
   }
 
@@ -198,10 +193,13 @@
 
   .download-app__a {
     background-color: transparent;
+    padding: 15px 45px;
   }
 
   .download-app__list {
     margin-top: 45px;
+    margin-left: 55px;
+    margin-right: 60px;
   }
 
   .download-app__avialability {
@@ -219,15 +217,17 @@
     }
   }
 
-
   .download-app__limiter {
-    padding: 110px 50% 130px 0;
+    padding: 110px 650px 130px 0;
+    position: relative;
+    z-index: 1;
 
     &::before {
       bottom: 0;
+      right: 22px;
       background-image: url("../img/phone-desk.png");
       z-index: 1;
-      width: 890px;
+      width: 554px;
       height: 645px;
 
       @media (min-resolution: 2dppx) {

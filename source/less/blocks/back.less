@@ -24,11 +24,15 @@
 
 .back__light-gray {
   background-color: @light-gray;
+  padding: 50px 0;
 }
 
 @media (min-width: @tablet-width) {
   .back__gray {
-    // padding: 28px 0 0 0;
     padding: 0;
+
+    &::before {
+      top: -45px;
+    }
   }
 }
