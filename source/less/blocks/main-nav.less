@@ -15,7 +15,7 @@
   text-transform: uppercase;
   box-shadow: 0 1px 0 @black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   background-color: @dark-blue;
-  padding: 25px 0;
+  padding: 16px 0;
   text-align: center;
 }
 
@@ -24,10 +24,17 @@
   color: @white;
 }
 
+@media (min-width: @tablet-width) {
+  .main-nav__item {
+    padding: 14px 0 18px 0;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .main-nav {
     background-color: transparent;
     flex-grow: 1;
+    padding-top: 30px;
   }
 
   .main-nav__list {
@@ -40,8 +47,8 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
-    padding: 46px 0;
     box-shadow: none;
     background-color: transparent;
+    padding: 14px 0 15px 0;
   }
 }

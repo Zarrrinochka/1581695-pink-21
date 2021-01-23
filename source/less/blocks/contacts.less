@@ -35,14 +35,16 @@
   color: @dark-pink;
   text-decoration: none;
 }
-//
-// .contacts__map {
-//   height: 200px;
-// }
+
+.contacts__map {
+  height: 200px;
+}
 
 .contacts__mapImg {
   height: 100%;
   width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 @media (min-width: @tablet-width) {
@@ -60,5 +62,15 @@
   .contacts__tel {
     display: block;
     text-align: center;
+  }
+
+  .contacts__map {
+    height: 374px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__map {
+    height: 502px;
   }
 }

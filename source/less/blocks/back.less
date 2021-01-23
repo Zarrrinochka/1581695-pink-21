@@ -1,5 +1,21 @@
 .back__gray {
   background-color: @gray;
+  padding-top: 83px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    min-width: 1200px;
+    height: 100%;
+    top: -40px;
+    left: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='100' viewBox='0 0 1200 100'%3E%3Cpath fill='white' d='M1200 0L0 100V0z' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 }
 
 .back__white {
@@ -8,4 +24,11 @@
 
 .back__light-gray {
   background-color: @light-gray;
+}
+
+@media (min-width: @tablet-width) {
+  .back__gray {
+    // padding: 28px 0 0 0;
+    padding: 0;
+  }
 }
