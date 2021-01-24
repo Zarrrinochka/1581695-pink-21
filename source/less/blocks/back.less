@@ -32,13 +32,17 @@
     padding: 0;
 
     &::before {
-      top: 0;
+      top: -45px;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .back__gray {
-    padding-top: 373px;
+    padding-top: 370px;
+  }
+
+  .back__gray::before {
+    top: 0;
   }
 }
