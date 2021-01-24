@@ -23,8 +23,23 @@
 }
 
 .back__light-gray {
-  background-color: @light-gray;
+  background-color: transparent;
   padding: 50px 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 320px;
+    min-width: 320px;
+    height: 506px;
+    top: 0;
+    left: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='320' height='506' viewBox='0 0 320 506' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-670.5 70.7692L543.5 0V506H-670.5V70.7692Z' fill='%23F2F2F2'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 }
 
 @media (min-width: @tablet-width) {

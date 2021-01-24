@@ -24,6 +24,30 @@
   color: @white;
 }
 
+.main-nav__item--catalog a:hover,
+.main-nav__item--form a:hover,
+.main-nav__item--main-academy a:hover,
+.main-nav__item-c--main a:hover,
+.main-nav__item-c--form a:hover,
+.main-nav__item-c--main-academy a:hover,
+.main-nav__item-f--main a:hover,
+.main-nav__item-f--catalog a:hover,
+.main-nav__item-f--main-academy a:hover {
+  color: @dark-pink;
+}
+
+.main-nav__item--catalog a:active,
+.main-nav__item--form a:active,
+.main-nav__item--main-academy a:active,
+.main-nav__item-c--main a:active,
+.main-nav__item-c--form a:active,
+.main-nav__item-c--main-academy a:active,
+.main-nav__item-f--main a:active,
+.main-nav__item-f--catalog a:active,
+.main-nav__item-f--main-academy a:active {
+  color: @white30;
+}
+
 @media (min-width: @tablet-width) {
   .main-nav__item {
     padding: 14px 0 18px 0;
@@ -51,5 +75,11 @@
     box-shadow: none;
     background-color: transparent;
     padding: 14px 0 15px 0;
+  }
+
+  .main-nav__item--main,
+  .main-nav__item-c--catalog,
+  .main-nav__item-f--form {
+    border-bottom: 2px @white solid;
   }
 }
