@@ -23,32 +23,27 @@
 }
 
 .back__light-gray {
-  background-color: transparent;
-  padding: 50px 0;
+  padding: 110px 0 50px 0;
   position: relative;
 
   &::before {
     content: "";
     display: block;
     position: absolute;
-    width: 320px;
-    min-width: 320px;
-    height: 506px;
-    top: 0;
+    width: 100%;
+    height: 100%;
+    top: -17px;
     left: 0;
-    background-image: url("data:image/svg+xml,%3Csvg width='320' height='506' viewBox='0 0 320 506' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-670.5 70.7692L543.5 0V506H-670.5V70.7692Z' fill='%23F2F2F2'/%3E%3C/svg%3E%0A");
+    background-image: url("data:image/svg+xml,%3Csvg width='320' height='506' viewBox='0 0 320 506' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-451 70.7692L763 0V506H-451V70.7692Z' fill='%23F2F2F2'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-size: 100%;
   }
 }
 
+
 @media (min-width: @tablet-width) {
   .back__gray {
     padding: 0;
-
-    &::before {
-      top: -45px;
-    }
   }
 }
 
