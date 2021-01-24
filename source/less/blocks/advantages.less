@@ -37,7 +37,7 @@ br.advantages__br {
 
 .advantages-item--friends {
   &::after {
-    //content: "";
+    content: "";
     display: block;
     position: absolute;
     bottom: calc(-100% + 100px);
@@ -213,7 +213,6 @@ br.advantages__br {
   .advantages__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 60px;
     margin: 0;
     padding: 0;
   }
@@ -233,6 +232,7 @@ br.advantages__br {
     text-align: center;
     font-size: 30px;
     line-height: 30px;
+    margin-bottom: 22px;
   }
 
   .advantages__description {
@@ -247,19 +247,19 @@ br.advantages__br {
 
   .advantages__item--mood {
     position: relative;
+    margin-left: 30px;
 
     &::after {
-      //content: "";
+      content: "";
       display: block;
       position: absolute;
-      left: 30px;
-      right: 0;
-      bottom: 100%;
-      // bottom: calc(100% - 80px);
+      left: 24px;
+      bottom: calc(100% + 56px);
       background-image: url("../img/hi-everyone-desk1-1.png");
       background-repeat: no-repeat;
       z-index: 2;
       height: 300px;
+      width: 100%;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/hi-everyone-desk1@2x.png");
@@ -270,30 +270,31 @@ br.advantages__br {
       content: "";
       display: block;
       position: absolute;
-      top: 0;
-      left: -20px;
-      right: -30px;
-      bottom: 245px;
+      top: -70px;
+      left: -30px;
       background-image: url("../img/shadow.png");
       background-repeat: no-repeat;
       z-index: 1;
+      width: 308px;
+      height: 15px;
     }
   }
 
   .advantages__item--world {
     position: relative;
+    margin-left: 36px;
 
     &::after {
-      //content: "";
+      content: "";
       display: block;
       position: absolute;
-      left: 30px;
-      right: 0;
-      bottom: 100%;
+      left: 28px;
+      bottom: calc(100% + 56px);
       background-image: url("../img/hi-everyone-desk2-1.png");
       background-repeat: no-repeat;
       z-index: 1;
       height: 300px;
+      width: 100%;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/hi-everyone-desk1@2x.png");
@@ -304,36 +305,38 @@ br.advantages__br {
       content: "";
       display: block;
       position: absolute;
-      top: 0;
-      left: -20px;
-      right: -30px;
-      bottom: 245px;
+      top: -70px;
+      left: -30px;
       background-image: url("../img/shadow.png");
       background-repeat: no-repeat;
       z-index: 1;
+      width: 308px;
+      height: 15px;
     }
   }
 
   .advantages-item--friends {
+    margin-left: 43px;
+
     &::before {
       content: "";
       display: block;
       position: absolute;
-      top: 0;
-      left: 620px;
-      right: -30px;
-      bottom: 245px;
+      top: -70px;
+      right: -5px;
       background-image: url("../img/shadow.png");
       background-repeat: no-repeat;
       z-index: 1;
+      width: 308px;
+      height: 13px;
     }
 
     &::after {
       background-image: url("../img/hi-everyone-desk3-1.png");
-      top: -290px;
-      left: 680px;
-      right: 0;
-      bottom: 0;
+      bottom: calc(100% + 57px);
+      left: 700px;
+      width: 186px;
+      height: 300px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/hi-everyone-desk3@2x.png");
@@ -352,21 +355,24 @@ br.advantages__br {
     flex-wrap: nowrap;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 67px;
     max-width: 960px;
     margin: 0 auto;
+    padding-bottom: 61px;
   }
 
   .advantages__timer {
     width: 298px;
     height: 345px;
-    margin-bottom: 67px;
+    margin-bottom: 0;
   }
 
   .advantages__textwrapper {
     display: flex;
     flex-direction: column;
-    padding-left: 65px;
-    padding-right: 65px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
   }
 
   .advantages__24 {
@@ -375,8 +381,8 @@ br.advantages__br {
     line-height: 30px;
     align-items: center;
     color: @black;
-    margin-top: 98px;
-    margin-bottom: 38px;
+    margin-top: 96px;
+    margin-bottom: 14px;
 
     br {
       display: none;
@@ -389,13 +395,17 @@ br.advantages__br {
     line-height: 30px;
     align-items: center;
     color: @dark-blue;
-    margin-bottom: 47px;
+    margin-bottom: 30px;
+
+    br {
+      display: none;
+    }
   }
 
   .advantages__more-info {
+    font-size: 18px;
+    line-height: 30px;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
     align-items: center;
     color: @dark-pink;
   }
