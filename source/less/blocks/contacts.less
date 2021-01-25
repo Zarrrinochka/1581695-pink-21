@@ -99,6 +99,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .contacts {
+    padding-top: 44px;
+    padding-bottom: 26px;
+  }
+
   .contacts__title {
     font-size: 40px;
     line-height: 54px;
@@ -107,8 +112,24 @@
   .contacts__var {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    //justify-content: space-around;
   }
+
+  .contacts__var1 {
+    margin-top: 33px;
+    margin-left: 46px;
+  }
+
+  .contacts__var2 {
+    margin-top: 33px;
+    margin-left: 99px;
+  }
+
+  .contacts__var3 {
+    margin-top: 44px;
+    margin-left: 205px;
+  }
+
 
   .contacts__tel {
     display: block;
@@ -119,7 +140,8 @@
     height: 374px;
 
     &::before {
-      background-image: url("data:image/svg+xml,%3Csvg width='1440' height='124' viewBox='0 0 1440 124' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M719.855 123.149L0.354645 0.14917H1439.35L719.855 123.149Z' fill='white'/%3E%3C/svg%3E%0A");
+      background-image: url("data:image/svg+xml,%3Csvg width='660' height='123' viewBox='0 0 660 123' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M330 123L-270 0H930L330 123Z' fill='white'/%3E%3C/svg%3E ");
+      top: 0;
     }
   }
 }

@@ -175,20 +175,24 @@
 }
 
 @media (min-width: @tablet-width) {
+  .table {
+    width: 620px;
+  }
+
   .table th {
     display: table-cell;
     margin: 0;
-    padding: 15px;
+    padding: 10px 0 10px 16px;
     width: 153px;
   }
 
   .table__price-td {
     width: 152px;
+    padding-bottom: 7px;
   }
 
   .table__col {
     text-transform: none;
-    padding: 15px;
   }
 
   .table__pink-td {
@@ -211,12 +215,23 @@
 
   .table__yes::after,
   .table__no::after {
-    top: 15px;
-    left: 60px;
+    top: 10px;
+    left: 61px;
   }
 
   .table__toggles-off {
     display: none;
+  }
+
+  .table__hit-a::after {
+    background-image: url("../img/hit-ribbon61.svg");
+    width: 61px;
+    height: 61px;
+  }
+
+  .table__hit {
+    top: 10px;
+    left: 7px;
   }
 }
 
