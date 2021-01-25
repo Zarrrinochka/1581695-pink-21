@@ -151,7 +151,60 @@
 }
 
 @media (min-width: @desktop-width) {
+  .contacts {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
   .contacts__map {
     height: 502px;
+
+    &::before {
+      top: 1px;
+      height: 123px;
+      width: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg width='1439' height='123' viewBox='0 0 1439 123' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M719.5 123L0 0H1439L719.5 123Z' fill='white'/%3E%3C/svg%3E");
+    }
+
+    &::after {
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .contacts__title {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  // .contacts__var {
+  //   justify-content: space-around;
+  // }
+
+  .contacts__var1,
+  .contacts__var2,
+  .contacts__var3 {
+    margin: 38px 0 0 0;
+  }
+
+  .contacts__var1 {
+    margin-left: 48px;
+    margin-right: 110px;
+  }
+
+  .contacts__var2 {
+    order: 3;
+  }
+
+  .contacts__var3 {
+    order: 2;
+    margin-right: 95px;
+  }
+
+  .contacts__tel,
+  .contacts__mail,
+  .contacts__address {
+    margin-bottom: 20px;
   }
 }
