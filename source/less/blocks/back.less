@@ -59,9 +59,18 @@
 @media (min-width: @desktop-width) {
   .back__gray {
     padding-top: 371px;
+
+    &::before {
+      top: 0;
+    }
   }
 
-  .back__gray::before {
-    top: 0;
+  .back__light-gray {
+    padding-top: 170px;
+
+    &::before {
+      top: 22px;
+      background-image: url("data:image/svg+xml,%3Csvg width='1200' height='534' viewBox='0 0 1200 534' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 100L1200 0V534H0V100Z' fill='%23F2F2F2'/%3E%3C/svg%3E");
+    }
   }
 }
