@@ -182,6 +182,7 @@
     text-transform: uppercase;
     color: @dark-pink;
     text-align: center;
+    padding: 0 30px;
   }
 
   .form__fieldset {
@@ -189,24 +190,42 @@
     margin: 0;
   }
 
+  .form__filed-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 58px;
+    margin-bottom: 24px;
+  }
+
   .form__filed-wrapper--1 {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    margin: 0 0 56px 0;
+    margin: 0 0 52px 0;
   }
 
   .form__label--1 {
-    margin-right: 20px;
+    //margin-right: 20px;
     flex-grow: 0;
+    margin: 0 19px 0 0;
+    padding: 0;
   }
 
   .form__input {
     flex-grow: 1;
+    width: 100%;
+    padding-right: 0;
+    margin-right: 57px;
+  }
+
+  .form__input-name {
+    margin-right: 0;
   }
 
   .form__label--2 {
     order: 1;
+    margin-top: 10px;
+    padding-left: 19px;
   }
 
   .form__fieldset--name,
@@ -223,17 +242,17 @@
   .form__fieldset--number {
     order: 3;
     border: 2px solid @light-gray;
-    padding-top: 40px;
-    padding-bottom: 37px;
-    padding-left: 37px;
-    padding-right: 37px;
+    padding-top: 34px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .form__achievements {
     order: 4;
     border: 2px solid @light-gray;
-    margin-top: 60px;
-    padding: 60px;
+    margin-top: 58px;
+    padding: 47px 60px 4px 59px;
 
     &::after {
       display: none;
@@ -243,8 +262,13 @@
   .form__emotionsDescribe {
     order: 5;
     border: 2px solid @light-gray;
-    padding: 60px;
-    margin-top: 70px;
+    margin: 60px 0 51px 0;
+    padding: 36px 60px 39px 59px;
+  }
+
+  .form__emotionsText {
+    margin: 0;
+    padding: 14px 0 0 20px;
   }
 
   .form__buttonwrap {
@@ -254,10 +278,11 @@
   .form__required {
     order: 7;
     margin-left: auto;
+    margin-top: 14px;
   }
 
   .form__legend {
-    padding: 0;
+    padding: 0 25px;
   }
 
   .form__emotionsLegend {
@@ -267,6 +292,38 @@
   .form__buttonSend {
     padding-left: 55px;
     padding-right: 55px;
+  }
+
+  .form__filed-wrapper-svg {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 59px;
+      height: 59px;
+      top: 2px;
+      right: 60px;
+      background-image: url("../img/tel_icon.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .form__filed-wrapper-svg2 {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 59px;
+      height: 59px;
+      top: 2px;
+      right: 60px;
+      background-image: url("../img/mail_icon.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
 
