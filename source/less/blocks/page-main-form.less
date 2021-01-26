@@ -1,0 +1,67 @@
+.page-main-form {
+  background-color: @white;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-main-form__text-wrapper {
+  padding-top: 44px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+
+.page-main-form__intro {
+  //background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-color: @dark-blue;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: @white;
+}
+
+.page-main-form__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: @dark-blue;
+  padding: 0;
+  margin: 0;
+}
+
+.page-main-form__text2 {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main-form__text,
+  .page-main-form__text2 {
+    font-size: 18px;
+    margin: 0;
+    //   padding: 55px 0;
+    //   display: inline;
+    padding: 0;
+    display: block;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .page-main-form__text-wrapper {
+    padding-top: 92px;
+    padding-bottom: 77px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main-form__text-wrapper {
+    padding: 100px 85px;
+    text-align: center;
+  }
+
+  .page-main-form__text,
+  .page-main-form__text2 {
+    display: inline;
+    padding: 0;
+  }
+}
