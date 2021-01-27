@@ -167,6 +167,10 @@
   margin: 0;
 }
 
+.form__required-desktop {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .form {
     display: flex;
@@ -328,26 +332,91 @@
 }
 
 @media (min-width: @desktop-width) {
+  .form {
+    align-items: normal;
+  }
+
   .form__fieldset--name {
-    width: 45%;
+    width: 46%;
     margin-right: 74px;
   }
 
   .form__fieldset--number {
     display: flex;
     justify-content: space-between;
+    padding-top: 21px;
+    padding-left: 59px;
+    padding-bottom: 9px;
+    padding-right: 61px;
   }
 
   .form__filed-wrapper {
-    width: 45%;
+    width: 100%;
+  }
+
+  .form__filed-wrapper--1 {
+    margin-top: 3px;
+    margin-bottom: 37px;
+  }
+
+  .form__filed-wrapper--2 {
+    margin: 12px 0 0 0;
+    width: 371px;
+  }
+
+  .form__achievements {
+    padding: 0;
   }
 
   .form__achievements-wrapper {
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 794px;
+    margin-left: 82px;
+    margin-top: 46px;
+    margin-bottom: 8px;
+  }
+
+  .form__label--1 {
+    margin-top: 20px;
+  }
+
+  .form__input-name {
+    margin-top: 16px;
+  }
+
+  .form__input--tel,
+  .form__input--email {
+    margin: 0 0;
+  }
+
+  .form__filed-wrapper-svg2::after,
+  .form__filed-wrapper-svg::after {
+    right: 0;
+  }
+
+  .form__emotionsDescribe {
+    margin-top: 58px;
+    padding-top: 32px;
+    padding-left: 58px;
+    margin-bottom: 16px;
+    padding-bottom: 0;
+  }
+
+  .form__required {
+    display: none;
+  }
+
+  .form__required-desktop {
+    display: block;
+    margin-top: 33px;
+    margin-left: auto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    order: 7;
   }
 }
